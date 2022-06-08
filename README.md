@@ -1,1 +1,1 @@
-# Estudo
+# projetos práticos para fins de estudo
