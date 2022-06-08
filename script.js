@@ -14,22 +14,23 @@ $(() => {
 
 $(function(){
     $("#dataGrid").dxDataGrid({
-        dataSource,
+        dataSource: data,
         columns:[{
-            dataField: "FullName"
+            dataField: "Filial"
         }, {
-            dataField: "Position"
+            dataField: "GrupoPC"
         }, {
-            dataField: "BirthDate",
+            dataField: "Data",
             dataType: "date",
-
-        }, "City",{
-            dataField: "Country"
+        }, {
+            dataField: "PontoControle"
+        }, {
+            dataField: "Aprovados"
+        }, {
+            dataField: "Reprovados"
         },
-        "Address",
-        "HomePhone",
     {
-        dataField: "PostalCode",
+        dataField: "%Reprovação",
     }],
         allowColumnReordering: true,
     });

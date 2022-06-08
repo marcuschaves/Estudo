@@ -6,7 +6,7 @@ const dataSource = [{
     oranges: 2,
   }, {
     day: 'Wednesday',
-    oranges: 3,
+    oranges: 12,
   }, {
     day: 'Thursday',
     oranges: 4,
@@ -19,5 +19,17 @@ const dataSource = [{
   }, {
     day: 'Sunday',
     oranges: 4,
+  }];
+
+  const data = [{
+    cdFilial: 'teste',
+    dsGrupoPontoControle: 'teste',
+    dsPontoControle: 'teste',
+    Data: '',
+
+
+    
+
+
   }];
   
