@@ -21,7 +21,7 @@ const dataSource = [{
     oranges: 4,
   }];
 
-  const data = [{
+const data = [{
     cdFilial: 'teste',
     dsGrupoPontoControle: 'teste',
     dsPontoControle: 'teste',
