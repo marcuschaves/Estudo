@@ -38,16 +38,19 @@ const data = [{
   Aprovados: '18',
   Reprovados: '2',
   Reprovacao:'90%',
+
 }, {
+
   cdFilial: 'teste',
     dsGrupoPC: 'teste',
     dsPontoControle: 'teste',
     Data: '20220613',
     Aprovados: '18',
     Reprovados: '2',
-    Reprovacao:'90%',
+    Reprovacao:'50%',
   
 }, {
+  
   cdFilial: 'teste',
     dsGrupoPC: 'teste',
     dsPontoControle: 'teste',
@@ -56,6 +59,6 @@ const data = [{
     Reprovados: '2',
     Reprovacao:'90%',
 
-    
+
   }];
   

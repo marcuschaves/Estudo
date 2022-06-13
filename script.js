@@ -1,6 +1,7 @@
 $(() => {
     $('#chart').dxChart({
         dataSource,
+        showBorders: true,
         series:{
             argumentField: 'day',
             valueField: 'maquina',
@@ -15,6 +16,8 @@ $(() => {
 $(function(){
     $("#dataGrid").dxDataGrid({
         dataSource: data,
+        showBorders: true,
+        rowAlternationEnabled: true,
         columns:[{
             dataField: "cdFilial"
         }, {
@@ -28,8 +31,7 @@ $(function(){
             dataField: "Aprovados"
         }, {
             dataField: "Reprovados"
-        },
-    {
+        }, {
         dataField: "Reprovacao",
     }],
         allowColumnReordering: true,
