@@ -22,7 +22,7 @@ const dataSource = [{
   }];
 
 const data = [{
-    cdFilial: 'teste',
+    cdFilial: '12',
     dsGrupoPC: 'teste',
     dsPontoControle: 'teste',
     Data: '20220613',
@@ -31,7 +31,7 @@ const data = [{
     Reprovacao:'90%',
 }, {
   
-  cdFilial: 'teste',
+  cdFilial: '11',
   dsGrupoPC: 'teste',
   dsPontoControle: 'teste',
   Data: '20220613',
@@ -41,7 +41,7 @@ const data = [{
 
 }, {
 
-  cdFilial: 'teste',
+  cdFilial: '5',
     dsGrupoPC: 'teste',
     dsPontoControle: 'teste',
     Data: '20220613',
@@ -51,7 +51,7 @@ const data = [{
   
 }, {
 
-  cdFilial: 'teste',
+  cdFilial: '7',
     dsGrupoPC: 'teste',
     dsPontoControle: 'teste',
     Data: '20220613',
@@ -83,8 +83,4 @@ const data = [{
   }, {
     day: 'Sunday',
     maquina: 4,
-
-
-
-
   }];

@@ -7,10 +7,15 @@
 }
 
 .container-md{
-   display: flex;
+   margin-top: 50px;
 }
 
 #chartVader{
     height: 440px;
 
+}
+
+#pieChart{
+    padding-top: 100px;
+    height: 300px;
 }

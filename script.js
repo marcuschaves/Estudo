@@ -26,11 +26,21 @@ $(() => {
     });
 });
 
+$(() => {
+    $('#pieChart').dxPieChart({
+        dataSource,
+        series: {
+            argumentField: "day",
+            valueField: "maquina",
+        },
+    });
+});
 
 $(function(){
     $("#dataGrid").dxDataGrid({
         dataSource: data,
         showBorders: true,
+        paging: true,
         rowAlternationEnabled: true,
         columns:[{
             dataField: "cdFilial"
