@@ -50,7 +50,7 @@ const data = [{
     Reprovacao:'50%',
   
 }, {
-  
+
   cdFilial: 'teste',
     dsGrupoPC: 'teste',
     dsPontoControle: 'teste',
@@ -62,3 +62,29 @@ const data = [{
 
   }];
   
+  const dataFon =[{
+    day: 'Monday',
+    maquina: 5,
+  }, {
+    day: 'Tuesday',
+    maquina: 0,
+  }, {
+    day: 'Wednesday',
+    maquina: 6,
+  }, {
+    day: 'Thursday',
+    maquina: 1,
+  }, {
+    day: 'Friday',
+    maquina: 6,
+  }, {
+    day: 'Saturday',
+    maquina: 2,
+  }, {
+    day: 'Sunday',
+    maquina: 4,
+
+
+
+
+  }];

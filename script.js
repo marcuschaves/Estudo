@@ -12,6 +12,20 @@ $(() => {
     });
 });
 
+$(() => {
+    $('#chartVader').dxChart({
+        dataSource: dataFon,
+        series:{
+            argumentField: 'day',
+            valueField: 'maquina',
+            name: 'Não Coformidade',
+            type: 'bar',
+            color: '#4682B4',
+
+        },
+    });
+});
+
 
 $(function(){
     $("#dataGrid").dxDataGrid({

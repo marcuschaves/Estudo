@@ -9,3 +9,8 @@
 .container-md{
    display: flex;
 }
+
+#chartVader{
+    height: 440px;
+
+}
