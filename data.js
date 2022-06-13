@@ -121,6 +121,33 @@ const data = [{
                     Aprovados: '18',
                     Reprovados: '2',
                     Reprovacao:'80%',
+}, {
+  
+                    cdFilial: '11',
+                    dsGrupoPC: 'teste',
+                    dsPontoControle: 'teste',
+                    Data: '20220613',
+                    Aprovados: '18',
+                    Reprovados: '2',
+                    Reprovacao:'80%',
+                  }, {
+  
+                    cdFilial: '11',
+                    dsGrupoPC: 'teste',
+                    dsPontoControle: 'teste',
+                    Data: '20220613',
+                    Aprovados: '18',
+                    Reprovados: '2',
+                    Reprovacao:'80%',
+                  }, {
+  
+                    cdFilial: '11',
+                    dsGrupoPC: 'teste',
+                    dsPontoControle: 'teste',
+                    Data: '20220613',
+                    Aprovados: '18',
+                    Reprovados: '2',
+                    Reprovacao:'80%',
 }];
   
   const dataFon =[{

@@ -38,10 +38,11 @@ $(() => {
 
 $(function(){
     $("#dataGrid").dxDataGrid({
+       
         dataSource: data,
         showBorders: true,
-        paging: true,
         rowAlternationEnabled: true,
+        
         columns:[{
             dataField: "cdFilial"
         }, {
@@ -59,5 +60,10 @@ $(function(){
         dataField: "Reprovacao",
     }],
         allowColumnReordering: true,
+        pager:[{
+            showPageSizeSelector: true,
+            allowedPageSizes: [10, 20, 50],
+            showNavigationButtons: true
+        }], 
     });
 });
