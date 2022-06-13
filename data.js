@@ -28,7 +28,7 @@ const data = [{
     Data: '20220613',
     Aprovados: '18',
     Reprovados: '2',
-    Reprovacao:'90%',
+    Reprovacao:'80%',
 }, {
   
   cdFilial: '11',
@@ -37,7 +37,7 @@ const data = [{
   Data: '20220613',
   Aprovados: '18',
   Reprovados: '2',
-  Reprovacao:'90%',
+  Reprovacao:'80%',
 
 }, {
 
@@ -47,7 +47,7 @@ const data = [{
     Data: '20220613',
     Aprovados: '18',
     Reprovados: '2',
-    Reprovacao:'50%',
+    Reprovacao:'80%',
   
 }, {
 
@@ -57,10 +57,71 @@ const data = [{
     Data: '20220613',
     Aprovados: '18',
     Reprovados: '2',
-    Reprovacao:'90%',
+    Reprovacao:'80%',
+}, {
 
+      cdFilial: '7',
+        dsGrupoPC: 'teste',
+        dsPontoControle: 'teste',
+        Data: '20220613',
+        Aprovados: '18',
+        Reprovados: '2',
+        Reprovacao:'80%',
+}, {
 
-  }];
+        cdFilial: '7',
+          dsGrupoPC: 'teste',
+          dsPontoControle: 'teste',
+          Data: '20220613',
+          Aprovados: '18',
+          Reprovados: '2',
+          Reprovacao:'80%',
+}, {
+
+          cdFilial: '7',
+            dsGrupoPC: 'teste',
+            dsPontoControle: 'teste',
+            Data: '20220613',
+            Aprovados: '18',
+            Reprovados: '2',
+            Reprovacao:'80%',
+}, {
+
+            cdFilial: '7',
+              dsGrupoPC: 'teste',
+              dsPontoControle: 'teste',
+              Data: '20220613',
+              Aprovados: '18',
+              Reprovados: '2',
+              Reprovacao:'80%',
+}, {
+
+              cdFilial: '7',
+                dsGrupoPC: 'teste',
+                dsPontoControle: 'teste',
+                Data: '20220613',
+                Aprovados: '18',
+                Reprovados: '2',
+                Reprovacao:'80%',
+}, {
+
+                cdFilial: '7',
+                  dsGrupoPC: 'teste',
+                  dsPontoControle: 'teste',
+                  Data: '20220613',
+                  Aprovados: '18',
+                  Reprovados: '2',
+                  Reprovacao:'80%',
+}, {
+
+                  cdFilial: '7',
+                    dsGrupoPC: 'teste',
+                    dsPontoControle: 'teste',
+                    Data: '20220613',
+                    Aprovados: '18',
+                    Reprovados: '2',
+                    Reprovacao:'80%',
+}];
   
   const dataFon =[{
     day: 'Monday',
