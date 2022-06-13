@@ -1,35 +1,61 @@
 const dataSource = [{
     day: 'Monday',
-    oranges: 3,
+    maquina: 3,
   }, {
     day: 'Tuesday',
-    oranges: 2,
+    maquina: 2,
   }, {
     day: 'Wednesday',
-    oranges: 12,
+    maquina: 12,
   }, {
     day: 'Thursday',
-    oranges: 4,
+    maquina: 4,
   }, {
     day: 'Friday',
-    oranges: 6,
+    maquina: 6,
   }, {
     day: 'Saturday',
-    oranges: 11,
+    maquina: 11,
   }, {
     day: 'Sunday',
-    oranges: 4,
+    maquina: 4,
   }];
 
 const data = [{
     cdFilial: 'teste',
-    dsGrupoPontoControle: 'teste',
+    dsGrupoPC: 'teste',
     dsPontoControle: 'teste',
-    Data: '',
-
+    Data: '20220613',
+    Aprovados: '18',
+    Reprovados: '2',
+    Reprovacao:'90%',
+}, {
+  
+  cdFilial: 'teste',
+  dsGrupoPC: 'teste',
+  dsPontoControle: 'teste',
+  Data: '20220613',
+  Aprovados: '18',
+  Reprovados: '2',
+  Reprovacao:'90%',
+}, {
+  cdFilial: 'teste',
+    dsGrupoPC: 'teste',
+    dsPontoControle: 'teste',
+    Data: '20220613',
+    Aprovados: '18',
+    Reprovados: '2',
+    Reprovacao:'90%',
+  
+}, {
+  cdFilial: 'teste',
+    dsGrupoPC: 'teste',
+    dsPontoControle: 'teste',
+    Data: '20220613',
+    Aprovados: '18',
+    Reprovados: '2',
+    Reprovacao:'90%',
 
     
-
-
   }];
   

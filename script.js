@@ -3,10 +3,10 @@ $(() => {
         dataSource,
         series:{
             argumentField: 'day',
-            valueField: 'oranges',
-            name: 'My oranges',
+            valueField: 'maquina',
+            name: 'Grupo de máquina',
             type:'bar',
-            color: '#ffaa66',
+            color: '#4682B4',
         },
     });
 });
@@ -16,21 +16,21 @@ $(function(){
     $("#dataGrid").dxDataGrid({
         dataSource: data,
         columns:[{
-            dataField: "Filial"
+            dataField: "cdFilial"
         }, {
-            dataField: "GrupoPC"
+            dataField: "dsGrupoPC"
         }, {
             dataField: "Data",
             dataType: "date",
         }, {
-            dataField: "PontoControle"
+            dataField: "dsPontoControle"
         }, {
             dataField: "Aprovados"
         }, {
             dataField: "Reprovados"
         },
     {
-        dataField: "%Reprovação",
+        dataField: "Reprovacao",
     }],
         allowColumnReordering: true,
     });
