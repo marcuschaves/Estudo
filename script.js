@@ -42,8 +42,12 @@ $(function(){
         dataSource: data,
         showBorders: true,
         rowAlternationEnabled: true,
+        paging:{
+            pageSize: 6,
+        },
+        pager: {
         showNavigationButtons: true,
-
+        },    
         columns:[{
             dataField: "cdFilial"
         }, {
