@@ -1,174 +1,190 @@
-const dataSource = [{
-    day: 'Monday',
+const dataSource = [
+  {
+    day: "Monday",
     maquina: 3,
-  }, {
-    day: 'Tuesday',
+  },
+  {
+    day: "Tuesday",
     maquina: 2,
-  }, {
-    day: 'Wednesday',
+  },
+  {
+    day: "Wednesday",
     maquina: 12,
-  }, {
-    day: 'Thursday',
+  },
+  {
+    day: "Thursday",
     maquina: 4,
-  }, {
-    day: 'Friday',
+  },
+  {
+    day: "Friday",
     maquina: 6,
-  }, {
-    day: 'Saturday',
+  },
+  {
+    day: "Saturday",
     maquina: 11,
-  }, {
-    day: 'Sunday',
+  },
+  {
+    day: "Sunday",
     maquina: 4,
-  }];
+  },
+];
 
-const data = [{
-    cdFilial: '12',
-    dsGrupoPC: 'teste',
-    dsPontoControle: 'teste',
-    Data: '20220613',
-    Aprovados: '18',
-    Reprovados: '2',
-    Reprovacao:'80%',
-}, {
-  
-  cdFilial: '11',
-  dsGrupoPC: 'teste',
-  dsPontoControle: 'teste',
-  Data: '20220613',
-  Aprovados: '18',
-  Reprovados: '2',
-  Reprovacao:'80%',
+const data = [
+  {
+    cdFilial: "12",
+    dsGrupoPC: "teste",
+    dsPontoControle: "teste",
+    Data: "20220613",
+    Aprovados: "18",
+    Reprovados: "2",
+    Reprovacao: "50%",
+  },
+  {
+    cdFilial: "11",
+    dsGrupoPC: "teste",
+    dsPontoControle: "teste",
+    Data: "20220613",
+    Aprovados: "18",
+    Reprovados: "2",
+    Reprovacao: "80%",
+  },
+  {
+    cdFilial: "5",
+    dsGrupoPC: "teste",
+    dsPontoControle: "teste",
+    Data: "20220613",
+    Aprovados: "18",
+    Reprovados: "2",
+    Reprovacao: "80%",
+  },
+  {
+    cdFilial: "7",
+    dsGrupoPC: "teste",
+    dsPontoControle: "teste",
+    Data: "20220613",
+    Aprovados: "18",
+    Reprovados: "2",
+    Reprovacao: "80%",
+  },
+  {
+    cdFilial: "7",
+    dsGrupoPC: "teste",
+    dsPontoControle: "teste",
+    Data: "20220613",
+    Aprovados: "18",
+    Reprovados: "2",
+    Reprovacao: "80%",
+  },
+  {
+    cdFilial: "7",
+    dsGrupoPC: "teste",
+    dsPontoControle: "teste",
+    Data: "20220613",
+    Aprovados: "18",
+    Reprovados: "2",
+    Reprovacao: "80%",
+  },
+  {
+    cdFilial: "7",
+    dsGrupoPC: "teste",
+    dsPontoControle: "teste",
+    Data: "20220613",
+    Aprovados: "18",
+    Reprovados: "2",
+    Reprovacao: "80%",
+  },
+  {
+    cdFilial: "7",
+    dsGrupoPC: "teste",
+    dsPontoControle: "teste",
+    Data: "20220613",
+    Aprovados: "18",
+    Reprovados: "2",
+    Reprovacao: "80%",
+  },
+  {
+    cdFilial: "7",
+    dsGrupoPC: "teste",
+    dsPontoControle: "teste",
+    Data: "20220613",
+    Aprovados: "18",
+    Reprovados: "2",
+    Reprovacao: "80%",
+  },
+  {
+    cdFilial: "7",
+    dsGrupoPC: "teste",
+    dsPontoControle: "teste",
+    Data: "20220613",
+    Aprovados: "18",
+    Reprovados: "2",
+    Reprovacao: "80%",
+  },
+  {
+    cdFilial: "7",
+    dsGrupoPC: "teste",
+    dsPontoControle: "teste",
+    Data: "20220613",
+    Aprovados: "18",
+    Reprovados: "2",
+    Reprovacao: "80%",
+  },
+  {
+    cdFilial: "11",
+    dsGrupoPC: "teste",
+    dsPontoControle: "teste",
+    Data: "20220613",
+    Aprovados: "18",
+    Reprovados: "2",
+    Reprovacao: "80%",
+  },
+  {
+    cdFilial: "11",
+    dsGrupoPC: "teste",
+    dsPontoControle: "teste",
+    Data: "20220613",
+    Aprovados: "18",
+    Reprovados: "2",
+    Reprovacao: "80%",
+  },
+  {
+    cdFilial: "11",
+    dsGrupoPC: "teste",
+    dsPontoControle: "teste",
+    Data: "20220613",
+    Aprovados: "18",
+    Reprovados: "2",
+    Reprovacao: "80%",
+  },
+];
 
-}, {
-
-  cdFilial: '5',
-    dsGrupoPC: 'teste',
-    dsPontoControle: 'teste',
-    Data: '20220613',
-    Aprovados: '18',
-    Reprovados: '2',
-    Reprovacao:'80%',
-  
-}, {
-
-  cdFilial: '7',
-    dsGrupoPC: 'teste',
-    dsPontoControle: 'teste',
-    Data: '20220613',
-    Aprovados: '18',
-    Reprovados: '2',
-    Reprovacao:'80%',
-}, {
-
-      cdFilial: '7',
-        dsGrupoPC: 'teste',
-        dsPontoControle: 'teste',
-        Data: '20220613',
-        Aprovados: '18',
-        Reprovados: '2',
-        Reprovacao:'80%',
-}, {
-
-        cdFilial: '7',
-          dsGrupoPC: 'teste',
-          dsPontoControle: 'teste',
-          Data: '20220613',
-          Aprovados: '18',
-          Reprovados: '2',
-          Reprovacao:'80%',
-}, {
-
-          cdFilial: '7',
-            dsGrupoPC: 'teste',
-            dsPontoControle: 'teste',
-            Data: '20220613',
-            Aprovados: '18',
-            Reprovados: '2',
-            Reprovacao:'80%',
-}, {
-
-            cdFilial: '7',
-              dsGrupoPC: 'teste',
-              dsPontoControle: 'teste',
-              Data: '20220613',
-              Aprovados: '18',
-              Reprovados: '2',
-              Reprovacao:'80%',
-}, {
-
-              cdFilial: '7',
-                dsGrupoPC: 'teste',
-                dsPontoControle: 'teste',
-                Data: '20220613',
-                Aprovados: '18',
-                Reprovados: '2',
-                Reprovacao:'80%',
-}, {
-
-                cdFilial: '7',
-                  dsGrupoPC: 'teste',
-                  dsPontoControle: 'teste',
-                  Data: '20220613',
-                  Aprovados: '18',
-                  Reprovados: '2',
-                  Reprovacao:'80%',
-}, {
-
-                  cdFilial: '7',
-                    dsGrupoPC: 'teste',
-                    dsPontoControle: 'teste',
-                    Data: '20220613',
-                    Aprovados: '18',
-                    Reprovados: '2',
-                    Reprovacao:'80%',
-}, {
-  
-                    cdFilial: '11',
-                    dsGrupoPC: 'teste',
-                    dsPontoControle: 'teste',
-                    Data: '20220613',
-                    Aprovados: '18',
-                    Reprovados: '2',
-                    Reprovacao:'80%',
-}, {
-  
-                    cdFilial: '11',
-                    dsGrupoPC: 'teste',
-                    dsPontoControle: 'teste',
-                    Data: '20220613',
-                    Aprovados: '18',
-                    Reprovados: '2',
-                    Reprovacao:'80%',
-  }, {
-  
-                    cdFilial: '11',
-                    dsGrupoPC: 'teste',
-                    dsPontoControle: 'teste',
-                    Data: '20220613',
-                    Aprovados: '18',
-                    Reprovados: '2',
-                    Reprovacao:'80%',
-}];
-  
-  const dataFon =[{
-    day: 'Monday',
+const dataFon = [
+  {
+    day: "Monday",
     maquina: 5,
-  }, {
-    day: 'Tuesday',
+  },
+  {
+    day: "Tuesday",
     maquina: 0,
-  }, {
-    day: 'Wednesday',
+  },
+  {
+    day: "Wednesday",
     maquina: 6,
-  }, {
-    day: 'Thursday',
+  },
+  {
+    day: "Thursday",
     maquina: 1,
-  }, {
-    day: 'Friday',
+  },
+  {
+    day: "Friday",
     maquina: 6,
-  }, {
-    day: 'Saturday',
+  },
+  {
+    day: "Saturday",
     maquina: 2,
-  }, {
-    day: 'Sunday',
+  },
+  {
+    day: "Sunday",
     maquina: 4,
-  }];
+  },
+];
