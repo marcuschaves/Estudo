@@ -1,73 +1,72 @@
 $(() => {
-    $("#chart").dxChart({
-        showBorders: true,
-        palette: 'soft',
-        series: {
-          argumentField: "cdFilial",
-          valueField: "indiceReprovacao",
-          name: "Índice de reprovação",
-          type: "stackedBar",
-        },
-      });
+  $("#chart").dxChart({
+    showBorders: true,
+    palette: "soft",
+    commonSeriesSetting: {
+      argumentField: "cdFilial",
+      name: "Índice de reprovação",
+      type: "stackedBar",
+    },
+    series: [
+      {valueField: "Aprovados", name: 'Aprovados'},
+      {valueField: "Reprovados", name: 'Reprovados'},
+    ],
 
-    $("#dataGrid").dxDataGrid({
-        dataSource: data,
-        showBorders: true,
-        rowAlternationEnabled: true,
-        selection: {
-            mode: 'single',
-        },
-        paging: {
-          pageSize: 6,
-        },
-        pager: {
-          showNavigationButtons: true,
-        },
-        columns: [{
-            dataField: "cdFilial",
-          },{
-            dataField: "dsGrupoPC",
-          },{
-            dataField: "Data",
-            dataType: "date",
-          },{
-            dataField: "dsPontoControle",
-          },{
-            dataField: "Aprovados",
-          },{
-            dataField: "Reprovados",
-          },{
-            dataField: "Reprovacao",
-          },
-        ],
-        allowColumnReordering: true,
-        onSelectionChanged(selectedItems) {
-            const { dsPontoControle } = selectedItems.selectedRowsData.pop();
-            let dt = data.filter(f => f.dsPontoControle === dsPontoControle);
-            let dataSource = dt.map(item => ({
-                cdFilial: item.cdFilial,
-                indiceReprovacao: ((dt.filter(s => s.cdFilial == item.cdFilial)
-                                        .reduce((a, b) => a + ((b['Aprovados'] || 0) - (b['Reprovados'] || 0)), 0)))*100
-            }));
+  });
 
-            if (dataSource) {
-              $('#chart').dxChart({	dataSource });
-            }
-          },
-      });
+  $("#dataGrid").dxDataGrid({
+    dataSource: data,
+    showBorders: true,
+    rowAlternationEnabled: true,
+    selection: {
+      mode: "single",
+    },
+    paging: {
+      pageSize: 6,
+    },
+    pager: {
+      showNavigationButtons: true,
+    },
+    columns: [
+      {
+        dataField: "cdFilial",
+      },
+      {
+        dataField: "dsGrupoPC",
+      },
+      {
+        dataField: "Data",
+        dataType: "date",
+      },
+      {
+        dataField: "dsPontoControle",
+      },
+      {
+        dataField: "Aprovados",
+      },
+      {
+        dataField: "Reprovados",
+      },
+      {
+        dataField: "Reprovacao",
+      },
+    ],
+    allowColumnReordering: true,
+    onSelectionChanged(selectedItems) {
+      const { dsPontoControle } = selectedItems.selectedRowsData.pop();
+      let dt = data.filter((f) => f.dsPontoControle === dsPontoControle);
+      let dataSource = dt.map((item) => ({
+        cdFilial: item.cdFilial,
+        Aprovados: item.Aprovados,
+        Reprovados: item.Reprovados,
+      }));
+
+      if (dataSource) {
+        $("#chart").dxChart({ dataSource });
+      }
+    },
+  });
 });
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 
