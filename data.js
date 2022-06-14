@@ -130,7 +130,7 @@ const data = [{
                     Aprovados: '18',
                     Reprovados: '2',
                     Reprovacao:'80%',
-                  }, {
+}, {
   
                     cdFilial: '11',
                     dsGrupoPC: 'teste',
@@ -139,7 +139,7 @@ const data = [{
                     Aprovados: '18',
                     Reprovados: '2',
                     Reprovacao:'80%',
-                  }, {
+  }, {
   
                     cdFilial: '11',
                     dsGrupoPC: 'teste',
