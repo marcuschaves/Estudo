@@ -76,6 +76,7 @@ $(() => {
     })
     .dxChart("instance");
   $("#dataGrid").dxDataGrid({
+    
     dataSource: data,
     showBorders: true,
     rowAlternationEnabled: true,
