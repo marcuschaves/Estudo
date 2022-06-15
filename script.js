@@ -2,7 +2,7 @@ $(() => {
   const data = [];
   const pontoDeControle = ["A", "B", "C"];
 
-  while (data.length < 1000) {
+  while (data.length < 20) {
     let grupoControle = pontoDeControle[Math.floor(Math.random() * 3)];
     let aprovados = Math.floor(Math.random() * 100);
     let reprovados = Math.floor(Math.random() * 20);
@@ -22,7 +22,7 @@ $(() => {
       title: "Reprovação",
       series: [
         {
-          argumentField: "dsPontoControle",
+          argumentField: "cdFilial",
           valueField: "reprovacao",
           name: "reprovacao",
         },
