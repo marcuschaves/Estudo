@@ -9,7 +9,7 @@ $(() => {
     let reprovados =  Math.floor(Math.random() * 20);
 
     data.push({
-      cdFilial: (Math.floor(Math.random() * 12)) + 1,
+      cdFilial: (Math.floor(Math.random() * 12)) +1,
       dsGrupoPC: grupoControle,
       dsPontoControle: grupoControle,
       Data: new Date(),
@@ -98,34 +98,6 @@ $(() => {
 });
 
 
-
-// $(() => {
-//   $("#chart").dxChart({
-//     dataSource: data,
-//     showBorders: true,
-//     series: {
-//       argumentField: "dsPontoControle",
-//       valueField: "Reprovacao",
-//       name: "Índice de reprovação",
-//       type: "bar",
-//       color: "#4682B4",
-//     },
-//   });
-// });
-/*
-$(() => {
-  $("#chartVader").dxChart({
-    dataSource: dataFon,
-    series: {
-      argumentField: "day",
-      valueField: "maquina",
-      name: "Não Coformidade",
-      type: "bar",
-      color: "#4682B4",
-    },
-  });
-});
-*/
 // $(() => {
 //   $("#pieChart").dxPieChart({
 //     dataSource,
