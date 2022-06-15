@@ -20,26 +20,19 @@ $(() => {
   const pieChart = $("#pieChart")
     .dxPieChart({
       title: "Reprovação",
-      commonSeriesSettings: {
-        argumentField: "cdFilial",
-      },
       series: [
-        
         {
-          valueField: "aprovados",
-          name: "Aprovados"
-        },
-        {
+          argumentField: "dsPontoControle",
           valueField: "reprovacao",
-          name: "Reprovacao"
+          name: "reprovacao",
         },
       ],
     })
-    .dxPieChart('instance');
+    .dxPieChart("instance");
 
   const chart = $("#chart")
     .dxChart({
-      title:"Não conformidade",
+      title: "Não conformidade",
       name: "Índice de reprovação",
       showBorders: true,
       palette: "soft",
@@ -60,9 +53,9 @@ $(() => {
     })
     .dxChart("instance");
 
-    const chartVader = $("#chartVader")
+  const chartVader = $("#chartVader")
     .dxChart({
-      title:"Não conformidade",
+      title: "Turno",
       name: "Índice de reprovação",
       showBorders: true,
       palette: "soft",
@@ -132,6 +125,7 @@ $(() => {
         aprovados: item.aprovados,
         reprovados: item.reprovados,
         reprovacao: item.reprovacao,
+        dsPontoControle: item.dsPontoControle,
       }));
 
       if (dataSource) {
@@ -143,7 +137,7 @@ $(() => {
         });
         chartVader.option({
           dataSource,
-        })
+        });
       }
     },
   });
