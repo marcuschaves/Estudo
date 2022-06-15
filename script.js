@@ -1,18 +1,41 @@
 $(() => {
-  $("#chart").dxChart({
+
+  const data = [];
+  const pontoDeControle = ['A', 'B', 'C']
+
+  while(data.length < 1000){
+    let grupoControle = pontoDeControle[Math.floor(Math.random() * 3)];
+    let aprovados = Math.floor(Math.random() * 100);
+    let reprovados =  Math.floor(Math.random() * 20);
+
+    data.push({
+      cdFilial: (Math.floor(Math.random() * 12)) + 1,
+      dsGrupoPC: grupoControle,
+      dsPontoControle: grupoControle,
+      Data: new Date(),
+      aprovados,
+      reprovados,
+      reprovacao: (reprovados/(aprovados + reprovados)),
+    });
+  }
+
+
+  const chart = $("#chart").dxChart({
+    name: "Índice de reprovação",
     showBorders: true,
     palette: "soft",
-    commonSeriesSetting: {
+    commonSeriesSettings: {
       argumentField: "cdFilial",
-      name: "Índice de reprovação",
-      type: "stackedBar",
+      type: 'stackedBar'
     },
-    series: [
-      {valueField: "Aprovados", name: 'Aprovados'},
-      {valueField: "Reprovados", name: 'Reprovados'},
-    ],
-
-  });
+    series: [{ 
+      valueField: "aprovados", 
+      name: 'Aprovados' 
+    }, { 
+      valueField: "reprovados", 
+      name: 'Reprovados' 
+    }]
+  }).dxChart('instance');
 
   $("#dataGrid").dxDataGrid({
     dataSource: data,
@@ -27,8 +50,7 @@ $(() => {
     pager: {
       showNavigationButtons: true,
     },
-    columns: [
-      {
+    columns: [{
         dataField: "cdFilial",
       },
       {
@@ -42,48 +64,55 @@ $(() => {
         dataField: "dsPontoControle",
       },
       {
-        dataField: "Aprovados",
+        dataField: "aprovados",
       },
       {
-        dataField: "Reprovados",
+        dataField: "reprovados",
       },
       {
-        dataField: "Reprovacao",
+        dataField: "reprovacao",
+        dataType: "number",
+        customizeText: (options) => {
+            return `${(options.value * 100).toFixed(2)}%`;
+        }
       },
     ],
-    allowColumnReordering: true,
     onSelectionChanged(selectedItems) {
       const { dsPontoControle } = selectedItems.selectedRowsData.pop();
       let dt = data.filter((f) => f.dsPontoControle === dsPontoControle);
+      
       let dataSource = dt.map((item) => ({
         cdFilial: item.cdFilial,
-        Aprovados: item.Aprovados,
-        Reprovados: item.Reprovados,
+        aprovados: item.aprovados,
+        reprovados: item.reprovados,
       }));
 
       if (dataSource) {
-        $("#chart").dxChart({ dataSource });
+        chart.option({
+          dataSource, 
+          
+        });
       }
     },
   });
 });
 
+
+
+// $(() => {
+//   $("#chart").dxChart({
+//     dataSource: data,
+//     showBorders: true,
+//     series: {
+//       argumentField: "dsPontoControle",
+//       valueField: "Reprovacao",
+//       name: "Índice de reprovação",
+//       type: "bar",
+//       color: "#4682B4",
+//     },
+//   });
+// });
 /*
-
-$(() => {
-  $("#chart").dxChart({
-    dataSource: data,
-    showBorders: true,
-    series: {
-      argumentField: "dsPontoControle",
-      valueField: "Reprovacao",
-      name: "Índice de reprovação",
-      type: "bar",
-      color: "#4682B4",
-    },
-  });
-});
-
 $(() => {
   $("#chartVader").dxChart({
     dataSource: dataFon,
@@ -96,19 +125,15 @@ $(() => {
     },
   });
 });
-
-$(() => {
-  $("#pieChart").dxPieChart({
-    dataSource,
-    series: {
-      argumentField: "day",
-      valueField: "maquina",
-    },
-  });
-});
-
-$(function () {
-  
-});
-
 */
+// $(() => {
+//   $("#pieChart").dxPieChart({
+//     dataSource,
+//     series: {
+//       argumentField: "day",
+//       valueField: "maquina",
+//     },
+//   });
+// });
+
+
