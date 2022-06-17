@@ -1,24 +1,23 @@
 #chart {
-    height: 440px;
+  height: 440px;
 }
 
 #dataGrid {
-    height: 300px;
+  height: 300px;
 }
 
-.container-md{
-   margin-top: 50px;
-   padding: 50px;
-   border-radius: 20px;
+.container-md {
+  margin-top: 50px;
+  padding: 50px;
+  border-radius: 20px;
 }
 
-#chartVader{
-    height: 440px;
-
+#chartVader {
+  height: 440px;
 }
 
-#pieChart{
-    padding-top: 100px;
-    padding: 50px;
-    height: 400px;
+#pieChart {
+  padding-top: 100px;
+  padding: 50px;
+  height: 400px;
 }

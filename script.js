@@ -76,7 +76,6 @@ $(() => {
     })
     .dxChart("instance");
   $("#dataGrid").dxDataGrid({
-    
     dataSource: data,
     showBorders: true,
     rowAlternationEnabled: true,
@@ -97,12 +96,13 @@ $(() => {
         dataField: "dsGrupoPC",
       },
       {
+        dataField: "dsPontoControle",
+      },
+      {
         dataField: "Data",
         dataType: "date",
       },
-      {
-        dataField: "dsPontoControle",
-      },
+
       {
         dataField: "aprovados",
       },
